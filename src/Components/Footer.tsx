@@ -1,4 +1,4 @@
-import { useMantineTheme, Container, Grid, Text, Button, Group, Avatar, UnstyledButton, Anchor, Code } from '@mantine/core';
+import { useMantineTheme, Container, Grid, Text } from '@mantine/core';
 
 const Footer = () => {
     const theme = useMantineTheme();
@@ -24,7 +24,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-const redirectToLink = (link: string): void => {
-    window.open(link, '_blank');
-};

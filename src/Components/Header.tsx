@@ -1,12 +1,9 @@
-import { Button, Badge, Burger, Drawer, Code, Title, Anchor, Text } from '@mantine/core';
-import { UnstyledButton, Group, Avatar } from '@mantine/core';
+import { Badge } from '@mantine/core';
 import React from 'react';
 import { Link } from 'react-scroll';
 
 const Header = () => {
     //const theme = useMantineTheme();
-    const [opened, setOpened] = React.useState(false);
-    const title = opened ? 'Close navigation' : 'Open navigation';
 
     return (
         <header>
@@ -26,7 +23,3 @@ const Header = () => {
 };
 
 export default Header;
-
-const redirectToLink = (link: string): void => {
-    window.open(link, '_blank');
-};
